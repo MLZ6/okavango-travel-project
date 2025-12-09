@@ -10,6 +10,21 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.container-2{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto auto;
+   grid-gap: 10px;
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.video{
+  width: 100%;
+  aspect-ratio: 21/9;
+  border-radius: 16px;
+}
 .text-center{
   text-align: center;
 }
@@ -20,6 +35,7 @@ body {
   .img-responsive {
     width: 100%;
     display: block;
+    border-radius: 16px;
   }
   .grid-2-columns {
     grid-template-columns: 1fr 1fr;
@@ -34,8 +50,8 @@ body {
   }
 
   .embed {
-  width:100%;
-  aspect-ratio:1/1;
+  width: 100%;
+  aspect-ratio: 1 /1;
  }
   
   .card{
@@ -50,8 +66,9 @@ body {
     padding: 30px;
   }
   .card-footer{
-    padding:  10px 10px;
+    padding: 0 30px 30px;
   }
+
   .btn{
     display: block;
     color: white;
@@ -103,13 +120,13 @@ header h1 {
     line-height: 1.5;
     text-align: center;
     color: #272044;
+    padding: 16px 32px;
+    margin-top: 32px;
+    display: inline-block;
     text-decoration: none;
     letter-spacing: 3px;
     text-transform:uppercase;
     background: white;
-    padding: 16px 32px;
-    display: inline-block;
-    margin-top: 32px;
   }
 
   main{
@@ -118,27 +135,27 @@ header h1 {
    main h2{
     font-size: 16px;
     line-height: 1.5;
+    margin: 0;
     letter-spacing: 5px;
     color: #272044;
     opacity: 0.3;
     text-transform: uppercase;
-    margin: 0;
-   }  
-   main h3{
+   } 
+
+   main h3 {
     font-size: 40px;
     line-height:1.5;
     color:#272044;
-    margin-bottom: 30px;
     margin-top: 0;
    }
 
-    main h4{
+    main h4 {
     font-size: 24px;
     line-height: 1;
     color: #272044;
     margin: 0;
   }
-  main h5{
+  main h5 {
     font-size: 13px;
     line-height: 1;
     color: #272044;
@@ -146,8 +163,9 @@ header h1 {
   }
   main p{
     font-size: 16px;
-    line-height:24px;
+    line-height:1.5;
     color:#272044;
+    opacity: 0.7;
   }
 
  
@@ -212,5 +230,8 @@ footer a {
   }
   .embed{
     aspect-ratio: 16/9;
+  }
+  .container-2 {
+    grid-template-columns: 1fr;
   }
  }
